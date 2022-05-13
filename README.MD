@@ -15,7 +15,7 @@ $ no-cors-proxy -p 8000 -t http://some.api.com
 After executing this command:
 
  * Each request to localhost on port 8000 will be forwarded to _some.api.com_ on port 80
- * Responses from server will be provided with ___Access-Control-Allow-Origin: *___ http header
+ * Responses from server will be provided with ___Access-Control-Allow-Origin: [what you specified in callerHost:callerPort]___ http header
  * Each __OPTIONS__ request (see: [preflight request](https://developer.mozilla.org/en-US/docs/Glossary/Preflight_request)) will be replyed automatically by the proxy.
 
 ##### Available options:
@@ -23,6 +23,8 @@ After executing this command:
   * -h _host_  (default: localhost)
   * -p _port_  (default: 3000)
   * -t _target_  (default: localhost)
+  * -callerHost _caller host_  (default: http://localhost)
+  * -callerPort _caller port_  (default: 4200)
 
 ### Using as local dependency
 

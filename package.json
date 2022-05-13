@@ -7,7 +7,12 @@
     "no-cors-proxy": "bin/index.js"
   },
   "preferGlobal": true,
-  "keywords": ["http", "proxy", "web", "cors"],
+  "keywords": [
+    "http",
+    "proxy",
+    "web",
+    "cors"
+  ],
   "author": "Emanuele Longo",
   "license": "ISC",
   "dependencies": {
